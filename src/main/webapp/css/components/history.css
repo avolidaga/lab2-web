@@ -1,0 +1,32 @@
+
+.history {
+    overflow-y: scroll;
+    height: 505px;
+    border: 1px solid #837bb3;
+    box-sizing: content-box;
+    margin-left: 90px;
+}
+
+.history::-webkit-scrollbar {
+    display: none;
+}
+
+.history thead th {
+    position: sticky;
+    top: 0;
+}
+
+.history table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.history th,
+.history td {
+    padding: 10px;
+}
+
+.history th {
+    background: #837bb3;
+    color: #ffffff;
+}

@@ -1,0 +1,23 @@
+1) рефакторинг ( почистить контроллер, разнести все по сервисам )
+2) как сделать это
+
+public @interface MyInject {
+    BeanLifeTime time();
+}
+
+enum BeanLifeTime{
+    SEC,
+    MIN,
+    HOUR
+}
+
+class MyClass{
+    @MyInject(time = BeanLifeTime.HOUR)
+    public String bean;
+}
+
+3) Tomcat Jetty Netty (pattern Reactor)
+
+
+
+4) fiber (зеленые потоки, корутины ) , реактор и мультиреактор  

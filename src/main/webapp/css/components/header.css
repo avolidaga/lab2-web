@@ -1,0 +1,14 @@
+.header {
+    padding: 15px 0;
+    background: #837bb3;
+    color: #ffffff;
+    box-shadow: 3px 15px 48px 14px rgba(34, 60, 80, 0.2);
+}
+
+.header__text {
+    margin-right: 15px;
+}
+
+.header__text:last-child {
+    margin-right: 0;
+}

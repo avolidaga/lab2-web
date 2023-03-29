@@ -1,0 +1,117 @@
+
+.main {
+    margin-top: 20px;
+}
+
+.form {
+    max-width: 457px;
+}
+
+.form__title {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.form__btns {
+    margin-top: 20px;
+    font-family: 'Josefin Slab', serif;
+}
+
+.form #submit {
+    border: 1px solid transparent;
+    padding: 12px 40px;
+    font-size: 16px;
+    background-color: #837bb3;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s all;
+    backface-visibility: hidden;
+    font-family: 'Josefin Slab', serif;
+}
+
+.form #submit.wrong {
+    animation: wrong-animation 0.5s;
+    background: #ce1515;
+}
+
+.form #submit:active {
+    padding: 11px 39px;
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.X-panel__label {
+    margin-right: 10px;
+    position: relative;
+}
+
+.X-panel__label .circle {
+    left: -1px;
+    top: 0px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #837bb3;
+    transition: 0.3s;
+}
+
+.X-panel__label input[type="radio"] {
+    opacity: 0;
+}
+
+.X-panel__label input[type="radio"]:last-child {
+    margin-right: 0;
+}
+
+.X-panel__label input[type="radio"]:checked ~ .circle {
+    background: #837bb3;
+}
+
+.Y-panel {
+    margin: 20px 0;
+}
+
+#y-data {
+    width: 100%;
+    padding: 5px;
+}
+
+#y-data:focus {
+    border: 2px solid #837bb3;
+    outline-color: #837bb3;
+}
+
+@keyframes wrong-animation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    75% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
+.R-select {
+    background-color: #837bb3;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    border: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.R-select option {
+    padding: 30px;
+}

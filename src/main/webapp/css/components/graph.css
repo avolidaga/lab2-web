@@ -1,0 +1,74 @@
+
+
+#graph-plate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1em;
+}
+
+#graph {
+    height: 20em;
+}
+
+#graph .graph-shape {
+    fill: #f2b3f8;
+    fill-opacity: 85%;
+}
+
+#graph .graph-axle-text,
+#graph .graph-axle-arrow,
+#graph .graph-label {
+    fill: #000000;
+}
+
+#graph .graph-axle-line,
+#graph .graph-axle-arrow,
+#graph .graph-point {
+    stroke: #000000;
+}
+
+#graph .dotted-line-x,
+#graph .dotted-line-y,
+#graph .dotted-raw-x,
+#graph .dotted-raw-y {
+    stroke: #000000;
+    stroke-dasharray: 5;
+}
+
+#graph .dotted-raw-x,
+#graph .dotted-raw-y {
+    stroke-width: 2px;
+    stroke: #d02424;
+}
+
+#graph .crossing {
+    fill: #d02424;
+}
+
+.line {
+    stroke: transparent;
+}
+
+.line.active {
+    stroke: red;
+    stroke-width: 1px;
+}
+
+.line.pointer {
+    stroke: black;
+    stroke-width: 1px;
+}
+
+.inactive {
+    display: none;
+}
+
+#y-line {
+    stroke: transparent;
+}
+
+#y-line.active {
+    stroke: red;
+}
